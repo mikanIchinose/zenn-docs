@@ -1,3 +1,8 @@
-# Zenn CLI
+# mikanのzennブログ
 
-* [📘 How to use](https://zenn.dev/zenn/articles/zenn-cli-guide)
+## TODO
+
+- [ ] textlintの設定
+- [ ] reviewdogの設定
+- [ ] ci pipeline(github actions)の設定
+
