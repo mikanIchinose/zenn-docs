@@ -2,8 +2,8 @@
 title: "Google Codelabの歩き方(Jetpack Compose編)"
 emoji: "🥼"
 type: "tech"
-topics: ["codelab","android"]
-published: false
+topics: ["codelab","android","jetpackcompose"]
+published: true
 ---
 
 個人的にGoogle Codelabのポータルサイトから好みのものを探すって結構面倒だなとおもっています。
