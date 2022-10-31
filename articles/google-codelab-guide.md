@@ -3,6 +3,7 @@ title: "Google Codelabの歩き方(Jetpack Compose編)"
 emoji: "🥼"
 type: "tech"
 topics: ["codelab","android","jetpackcompose"]
+publication_name: "karabiner_inc"
 published: true
 ---
 
