@@ -20,7 +20,6 @@
   },
   "homepage": "https://github.com/mikanIchinose/zenn-docs#readme",
   "dependencies": {
-    "zenn-cli": "^0.1.98"
-  },
-  "devDependencies": {}
+    "zenn-cli": "^0.1.132"
+  }
 }
