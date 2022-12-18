@@ -56,7 +56,7 @@ $ which jarsigner
 単純なスクリプトを結構な数作らないといけないのでMakefileとしてまとめます。
 {}で囲んでいる箇所はご自身のものに置き換えてください
 
-```make:Makefile
+```make
 .PHONY: tasks # タスク一覧表示
 tasks:
 	@grep '^.PHONY: .* #' Makefile | sed 's/\.PHONY: \(.*\) # \(.*\)/\1 -> \2/' | expand -t20
@@ -102,7 +102,7 @@ upload:
 release: clean assembleDebug upload
 ```
 
-### {app_id}の探し方
+### app_idの探し方
 
 `Firebase>プロジェクトの設定>マイアプリ`を見ると`アプリID`という項目があるのでそちらをコピペします
 
