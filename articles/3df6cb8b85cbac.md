@@ -108,6 +108,21 @@ release: clean assembleDebug upload
 
 ![](/images/3df6cb8b85cbac/firebase-app-id.png)
 
+### 実行
+
+シナリオ1：受け入れ試験用にAPKを作成しApp Distributionで配布する
+
+```bash
+make release
+```
+
+シナリオ2：本番リリース用にAABを作成する
+
+```bash
+make generateSignedBundle
+open /path/to/release.aab
+```
+
 ## Appendix: gumを使ってローディングを表示する
 
 [gum](https://github.com/charmbracelet/gum)というCLIを使えば簡単にローディングアニメーションを表示できるのでオススメ
