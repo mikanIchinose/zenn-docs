@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -e
+
+zenn() {
+	deno run --no-lock --reload -A npm:zenn-cli@latest "$@"
+}
+
+title=$(gum input --placeholder "title?")
+
+if test "$title" == ""; then
+	echo "Title not provided"
+	exit
+fi
+
+zenn new:article --title "$title"

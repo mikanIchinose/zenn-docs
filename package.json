@@ -2,21 +2,14 @@
   "name": "zenn-docs",
   "version": "1.0.0",
   "description": "mikanのzennブログ",
-  "main": "index.js",
   "scripts": {
-    "dev": "zenn preview",
-    "lint": "echo \"excute linter\"",
-    "fmt": "echo \"excute formatter\""
+    "preview": "zenn preview",
+    "new:article": "./scripts/new-article",
+    "new:book": "./scripts/new-book"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mikanIchinose/zenn-docs.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/mikanIchinose/zenn-docs/issues"
   },
   "homepage": "https://github.com/mikanIchinose/zenn-docs#readme",
   "dependencies": {
