@@ -1,6 +1,8 @@
 {
   "tasks": {
+    "zenn-cli": "deno run -A npm:zenn-cli@latest",
     "preview": "deno run -A npm:zenn-cli@latest preview",
-    "article": "deno run -A npm:zenn-cli@latest new:article"
+    "new:article": "deno run -A npm:zenn-cli@latest new:article",
+    "open:article": "nvim $(deno task --quiet zenn-cli list:articles | fzf | awk '{print \"articles/\" $1 \".md\"}')"
   }
 }
