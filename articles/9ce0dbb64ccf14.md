@@ -7,6 +7,14 @@ published: true
 publication_name: "karabiner_inc"
 ---
 
+:::message
+### changelog
+2023/11/19
+スクリプトが間違っていたので修正しました
+`killall -9 java` → `killall -9 java || true`
+※ ジャーナルファイルが存在しなかったときに処理がシェルスクリプトで終っていた
+:::
+
 Android Studioでの開発中に「さてビルドして動作を確認しよう」と思ったときに
 このようなログが出力された経験はないだろうか
 
@@ -41,7 +49,7 @@ killall -9 java
   ![](/images/9ce0dbb64ccf14/edit-configuration.png)
 1. 左上の+ボタンをクリックし、shell scriptを選択する
   ![](/images/9ce0dbb64ccf14/add-shell-script.png)
-1. `Script text` を選択し、先程のスクリプト `killall -9 java` を入力し、Nameは「kill java process」とでも入力しておく
+1. `Script text` を選択し、先程のスクリプト `killall -9 java || true` を入力し、Nameは「kill java process」とでも入力しておく
   ![](/images/9ce0dbb64ccf14/kill-java-process.png)
 1. 左の設定一覧から `Android app/app` を選択し、下のほうにスクロールすると `Before launch` という項目があるので、そこの+をクリックし、 `Run Another Configuration` を選択し、`kill java process` を追加する
   ![](/images/9ce0dbb64ccf14/app-configuration.png)
