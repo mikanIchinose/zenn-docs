@@ -44,6 +44,7 @@ killall -9 java
 1. `Script text` を選択し、先程のスクリプト `killall -9 java` を入力し、Nameは「kill java process」とでも入力しておく
   ![](/images/9ce0dbb64ccf14/kill-java-process.png)
 1. 左の設定一覧から `Android app/app` を選択し、下のほうにスクロールすると `Before launch` という項目があるので、そこの+をクリックし、 `Run Another Configuration` を選択し、`kill java process` を追加する
+  ![](/images/9ce0dbb64ccf14/app-configuration.png)
   ![](/images/9ce0dbb64ccf14/add-another-configuration.png)
 1. `kill java process` を先頭に移動させる
   ![](/images/9ce0dbb64ccf14/before-launch-shell-script.png)
