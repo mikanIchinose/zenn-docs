@@ -2,11 +2,7 @@
 
 set -e
 
-zenn-cli() {
-	command deno run --no-lock -A npm:zenn-cli@latest "$@"
-}
-
-article=$(zenn-cli list:articles | command fzf)
-article_file=$(command echo "$article" | command awk '{ print $1 ".md" }')
+article=$(deno run --no-lock --reload -A npm:zenn-cli@latest list:articles | fzf)
+article_file=$(echo "$article" | awk '{ print $1 ".md" }')
 
 command nvim ./articles/"$article_file"
