@@ -4,9 +4,6 @@ set -e
 
 title=$(gum input --placeholder "title?")
 
-if test "$title" == ""; then
-	echo "タイトルを入力してください"
-	exit
-fi
+[ -z "$title" ] && exit 1
 
-deno run --no-lock --reload -A npm:zenn-cli@latest new:article --title "$title"
+deno run -A npm:zenn-cli@latest new:article --title "$title"
