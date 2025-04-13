@@ -45,3 +45,41 @@
 - https://airbnb.io/mavericks/
 ## AutoMuttonRecipe触ってみた
 - https://github.com/RyuNen344/AutoMuttonRecipe
+## 入門 Jetpack Compose Animation
+### 入門 Jetpack Compose Animation part3
+https://developer.android.com/develop/ui/compose/animation/value-based#low-level-apis
+- Low-level animation APIs
+  - Animatable
+  - Animation
+  - TargetBasedAnimation
+  - DecayAnimartion
+### 入門 Jetpack Compose Animation part3
+https://developer.android.com/develop/ui/compose/animation/advanced
+- Animationとユーザー操作
+### 入門 Jetpack Compose Animation part4
+https://developer.android.com/develop/ui/compose/animation/customize
+- AnimationSpec
+  - spring
+  - tween
+  - keyframes
+  - keyframesWithSplines
+  - repeatable
+  - infiniteRepeatable
+  - snap
+  - Easing
+### 入門 Jetpack Compose Animation part6
+- Preview
+- label
+### 入門 Jetpack Compose Animation part5
+https://zenn.dev/irihi/articles/2fce7f66e49d6c
+- Enter/ExitTransition
+  - Content Transition
+  - Screen Transition
+- SizeTransformation
+### 入門 Jetpack Compose Animation part7
+https://developer.android.com/develop/ui/compose/animation/testing
+- Test animations
+### 入門 Jetpack Compose Animation partX
+https://medium.com/androiddevelopers/customizing-animatedcontent-in-jetpack-compose-629c67b45894
+- AnimatedContent Advanced
+- Shared Element Transition
