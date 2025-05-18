@@ -5,9 +5,6 @@
 - `images/` - Article images organized by article ID
 
 ## Commands
-- `npx -y zenn-cli@latest new:article --machine-readable`
-  - Create a new article
-  - After creating, create a directory under `images/` with the article ID
 - `ffmeg -i {input} -vf "fps=10,scale=320:-1;flags=lanczos" -c:v gif {output}`
   - Convert video to gif
   - {input}: input video path

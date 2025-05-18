@@ -1,0 +1,7 @@
+- `ffmeg -i {input} -vf "fps=10,scale=320:-1;flags=lanczos" -c:v gif {output}`
+  - Convert video to gif
+  - {input}: input video path
+  - {output}: output gif path
+    - same directory of input
+  - gif画像の生成が完了したら対象記事ファイルの適当な場所に挿入する
+  - 処理が完了したら動画ファイルをゴミ箱に捨てる
