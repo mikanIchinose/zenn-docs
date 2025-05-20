@@ -49,7 +49,7 @@ fun CounterScreen(
     }
 }
 
-// IntentにもとづいてModelの状態を更新する
+// IntentにもとづいてModelを更新する
 class CounterViewModel : ViewModel() {
     private val _state = MutableStateFlow(CounterState(count = 0))
     val state: StateFlow<CounterState> = _state.asStateFlow()
@@ -437,7 +437,7 @@ class ArticlesStoreTest {
 ## AIエージェントとの相性
 コードでは単にステートマシンを組み立てているだけなので、AIエージェントとの相性が良いのではないかと思い、試してみました。
 
-0から作らせるとAPIを理解しないままに作り始めそうだったので、例を1つ提示して作らせるOne-Shot Promptで試してみました。
+0から作らせるとAPIを理解しないままに作り始めそうだったので、例を1つ提示して作らせる one-shot promptingで試してみました。
 
 - model: claude-3.7 sonnet
     - 作業量が多かったので、長時間実行してくれるclaudeを選択しました。
