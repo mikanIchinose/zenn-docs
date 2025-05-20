@@ -79,11 +79,11 @@ setContent {
 ```
 
 1画面の中で複数の状態が刻一刻と変化したり、ユーザーインタラクションの数が膨大になったりして、複雑化すると、状態管理が難しくなります。その解決策として、ユーザーインタラクションをクラスとして定義し、状態遷移をステートマシンとして明示的にプログラミングすることが考えられます。^[https://speakerdeck.com/mikanichinose/modeling-uievent]^[https://techblog.lycorp.co.jp/ja/20240624a]
-そのような仕組みを導入すると途端にボイラープレートが増えてしまいます。この問題を解決するために、MVIフレームワークが存在します。
+しかし、そのような仕組みを導入すると途端にボイラープレートが増えてしまいます。この問題を解決するために、MVIフレームワークが存在します。
 
 ## Tartとは
 [@hkusu_](https://x.com/hkusu_) さんを中心として、YUMEMI社で管理されている状態管理フレームワークです。
-去年の後半から氏が個人で開発を始め、11月にYUMEMI社に移管されました。
+去年の後半から氏が個人で開発を始め、11月にYUMEMI社のリポジトリに移管されました。
 https://x.com/hkusu_/status/1837409104660517367
 
 このフレームワークでは3つの概念とそれらを繫ぐDSLを提供しています。
@@ -93,14 +93,16 @@ https://x.com/hkusu_/status/1837409104660517367
 - **Event**: 副作用を表現するインターフェースです。(副作用という表現がピンとこないのであれば、StoreからUIに通知されるデータとして捉えると良いでしょう。)
 - **Store**: StateとActionを繋ぐステートマシンです。
 
-基本的な使いかたはREADMEを見ていただくとしてさっそく応用例から見ていきます。
+基本的な使いかたは[README](https://github.com/yumemi-inc/Tart)や[DeepWiki](https://deepwiki.com/yumemi-inc/Tart)を見ていただくとして、さっそく応用例から見ていきます。
 
 ## サンプル実装
-このフレームワークを使って、以下のようなQiita閲覧アプリを作りました。
+Tartを使って、以下のようなQiita閲覧アプリを作りました。
 ![](/images/0a6bccfa1545ad/articles_article.gif =250x)
 *記事一覧画面と詳細画面*
 ![](/images/0a6bccfa1545ad/article_comments.gif =250x)
 *コメント画面*
+
+https://github.com/mikanIchinose/android-tart-sample
 
 ### 記事一覧画面
 
