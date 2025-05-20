@@ -440,7 +440,7 @@ class ArticlesStoreTest {
 0から作らせるとAPIを理解しないままに作り始めそうだったので、例を1つ提示して作らせる one-shot promptingで試してみました。
 
 - model: claude-3.7 sonnet
-    - 作業量が多かったので、長時間実行してくれるclaudeを選択しました。
+    - 作業量が多かったので、長時間実行できるclaudeを選択しました。
 - task file
     ```markdown:docs/tasks/0001-create-articlestorecontainer.md
     ---
@@ -526,9 +526,8 @@ Made changes.
 TDDの原則に従い、テストコードも実装しました。この実装により、`ArticleStoreContainer` が正しく動作することを確認できます。
 :::
 
-完成したコード
+### おおよそ期待した通りのコードが生成されました。
 
-おおよそ期待した通りのコードが生成されました。
 ```kotlin
 class ArticleStoreContainer @Inject constructor(
     private val articleRepository: ArticleRepository,
@@ -665,8 +664,8 @@ class ArticleStoreTest {
 
         // Assert
         val currentState = store.currentState
-        assertIs<ArticleState.Error>(currentState)
-        assertEquals("Article not found", currentState.message)
+        val expected = ArticleState.Error("Article not found")
+        assertEquals(expected, currentState)
     }
 }
 ```
