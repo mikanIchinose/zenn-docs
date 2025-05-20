@@ -3,6 +3,7 @@ title: "MVIフレームワーク試し打ち#1: yumemi-inc/Tart"
 emoji: "🪐"
 type: "tech" # tech: 技術記事 / idea: アイデア
 topics: ["mvi", "compose", "android"]
+publication_name: "karabiner_inc"
 published: true
 ---
 
