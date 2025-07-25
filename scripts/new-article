@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-set -e
-
-title=$(gum input --placeholder "title?")
-
-[ -z "$title" ] && exit 1
-
-deno run -A npm:zenn-cli@latest new:article --title "$title"

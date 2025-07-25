@@ -2,8 +2,7 @@
 
 ## Commands
 - `deno task preview` - Start local preview server
-- `deno task new:article` - Create new article (interactive)
-- `deno task open:article` - Open article in editor (interactive)
+- `deno task zenn` - zenn-cli
 
 ## Project Structure
 - `articles/` - All published and draft articles

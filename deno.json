@@ -2,7 +2,6 @@
 	"lock": false,
 	"tasks": {
 		"preview": "deno run -A npm:zenn-cli@latest preview",
-		"new:article": "bash ./scripts/new-article",
-		"open:article": "bash ./scripts/open-article"
+		"zenn": "deno run -A npm:zenn-cli@latest"
 	}
 }
