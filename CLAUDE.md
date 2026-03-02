@@ -2,7 +2,7 @@
 
 ## Commands
 - `deno task preview` - Start local preview server
-- `deno task zenn` - zenn-cli
+- `deno task zenn new:article --title "<title>" --type "<tech|idea>" --emoji "<emoji>" --publication-name "<publication-name>" --machine-readable` - create new article
 
 ## Project Structure
 - `articles/` - All published and draft articles
