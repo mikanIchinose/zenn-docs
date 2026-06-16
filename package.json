@@ -1,0 +1,12 @@
+{
+  "name": "zenn-docs",
+  "private": true,
+  "scripts": {
+    "preview": "zenn preview",
+    "article:open": "bash scripts/article-open.sh",
+    "article:new": "bash scripts/article-new.sh"
+  },
+  "devDependencies": {
+    "zenn-cli": "^0.5.0"
+  }
+}
